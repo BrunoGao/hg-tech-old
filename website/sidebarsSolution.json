@@ -1,0 +1,15 @@
+{
+  "solution": [
+    {
+      "type": "category",
+      "label": "solution",
+      "collapsed": false,
+      "collapsible": false,
+      "items": [
+        "LangChain：打造自己的LLM应用",
+        "Spring Boot自动配置源码解析",
+        "Spring Boot启动源码分析"
+      ]
+    }
+  ]
+}

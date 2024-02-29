@@ -9,14 +9,16 @@ const users = require('./showcase.json');
 const versions = require('./versions.json');
 
 const lastVersion = versions[0];
-const copyright = `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc.`;
+const copyright = `Copyright © ${new Date().getFullYear()} hg-tech
+<a href=\"http://beian.miit.gov.cn\" target=\"_blank\" rel=\"noopener\">粤ICP备19161989号-4</a>"
+`;
 
 const commonDocsOptions = {
   breadcrumbs: false,
-  showLastUpdateAuthor: false,
+  showLastUpdateAuthor: true,
   showLastUpdateTime: true,
   editUrl:
-    'https://github.com/facebook/react-native-website/blob/main/website/',
+    'https://gitee.com/bruno_gao_admin/react-native-website/tree/main/website',
   remarkPlugins: [require('@react-native-website/remark-snackplayer')],
 };
 
@@ -28,7 +30,7 @@ module.exports = {
   tagline: 'A framework for building native apps using React',
   organizationName: 'facebook',
   projectName: 'react-native',
-  url: 'https://reactnative.dev',
+  url: 'https://www.heguang-tech.cn/',
   baseUrl: '/',
   clientModules: [
     require.resolve('./modules/snackPlayerInitializer.js'),
@@ -129,6 +131,17 @@ module.exports = {
     [
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      {
+        id: 'solution', // 新文档部分的唯一ID
+        path: 'solution', // 文档文件存放的目录
+        routeBasePath: '/solution', // 路由的基础路径
+        sidebarPath: require.resolve('./sidebarsSolution.json'), // 侧边栏配置文件的路径
+        ...commonDocsOptions, // 使用已定义的公共文档选项
+      },
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'contributing',
         path: 'contributing',
@@ -210,7 +223,7 @@ module.exports = {
       announcementBar: {
         id: 'support_ukraine',
         content:
-          'Support Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://opensource.facebook.com/support-ukraine"> Help Provide Humanitarian Aid to Ukraine</a>.',
+          '🇺🇦 <a target="_blank" rel="和光科技" href="https://www.heguang-tech.cn/"> 和光科技</a>',
         backgroundColor: '#20232a',
         textColor: '#fff',
         isCloseable: false,
@@ -226,10 +239,13 @@ module.exports = {
           'groovy',
           'ruby',
           'flow',
+          'python',
+          'ini',
+          'scala',
         ],
       },
       navbar: {
-        title: 'React Native',
+        title: '和光科技',
         logo: {
           src: 'img/header_logo.svg',
           alt: 'React Native',
@@ -266,15 +282,15 @@ module.exports = {
           },
           {
             type: 'doc',
-            docId: 'overview',
-            label: 'Contributing',
+            docId: 'Spring Boot启动源码分析',
+            label: '技术方案',
             position: 'right',
-            docsPluginId: 'contributing',
+            docsPluginId: 'solution',
           },
           {
             type: 'doc',
             docId: 'overview',
-            label: 'Community',
+            label: 'smartcity',
             position: 'right',
             docsPluginId: 'community',
           },
@@ -285,7 +301,7 @@ module.exports = {
           },
           {
             to: '/blog',
-            label: 'Blog',
+            label: '技术方案',
             position: 'right',
           },
           {
@@ -393,16 +409,16 @@ module.exports = {
           },
         ],
         logo: {
-          alt: 'Meta Open Source Logo',
-          src: 'img/oss_logo.svg',
-          href: 'https://opensource.fb.com/',
+          alt: 'hg-tech',
+          src: 'img/heguang.png',
+          href: 'https://www.heguang-tech.cn/',
         },
         copyright,
       },
       algolia: {
-        appId: '8TDSE0OHGQ',
-        apiKey: '83cd239c72f9f8b0ed270a04b1185288',
-        indexName: 'react-native-v2',
+        appId: 'VQ6W6FSK2C',
+        apiKey: 'a2953f1561fd3716177ddbeb9e84405e',
+        indexName: 'he-tech',
         contextualSearch: true,
       },
       metadata: [
