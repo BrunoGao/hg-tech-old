@@ -26,10 +26,10 @@ const isDeployPreview = process.env.PREVIEW_DEPLOY === 'true';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'React Native',
-  tagline: 'A framework for building native apps using React',
-  organizationName: 'facebook',
-  projectName: 'react-native',
+  title: '和光科技',
+  tagline: 'website for 和光科技',
+  organizationName: '和光科技',
+  projectName: 'hg-tech',
   url: 'https://www.heguang-tech.cn/',
   baseUrl: '/',
   clientModules: [
@@ -131,17 +131,6 @@ module.exports = {
     [
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      {
-        id: 'solution', // 新文档部分的唯一ID
-        path: 'solution', // 文档文件存放的目录
-        routeBasePath: '/solution', // 路由的基础路径
-        sidebarPath: require.resolve('./sidebarsSolution.json'), // 侧边栏配置文件的路径
-        ...commonDocsOptions, // 使用已定义的公共文档选项
-      },
-    ],
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
         id: 'contributing',
         path: 'contributing',
@@ -158,6 +147,39 @@ module.exports = {
         path: 'community',
         routeBasePath: '/community',
         sidebarPath: require.resolve('./sidebarsCommunity.json'),
+        ...commonDocsOptions,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'AI',
+        path: 'AI',
+        routeBasePath: '/AI',
+        sidebarPath: require.resolve('./sidebarsAI.json'),
+        ...commonDocsOptions,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'solution',
+        path: 'solution',
+        routeBasePath: '/solution',
+        sidebarPath: require.resolve('./sidebarsSolution.json'),
+        ...commonDocsOptions,
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'news',
+        path: 'news',
+        routeBasePath: '/news',
+        sidebarPath: require.resolve('./sidebarsNews.json'),
         ...commonDocsOptions,
       }),
     ],
@@ -253,32 +275,18 @@ module.exports = {
         style: 'dark',
         items: [
           {
-            label: 'Development',
-            type: 'dropdown',
+            type: 'doc',
+            docId: 'overview',
+            label: '安全监测',
             position: 'right',
-            items: [
-              {
-                label: 'Guides',
-                type: 'doc',
-                docId: 'getting-started',
-              },
-              {
-                label: 'Components',
-                type: 'doc',
-                docId: 'components-and-apis',
-              },
-              {
-                label: 'APIs',
-                type: 'doc',
-                docId: 'accessibilityinfo',
-              },
-              {
-                label: 'Architecture',
-                type: 'doc',
-                docId: 'architecture-overview',
-                docsPluginId: 'architecture',
-              },
-            ],
+            docsPluginId: 'community',
+          },
+          {
+            type: 'doc',
+            docId: 'LangChain：打造自己的LLM应用',
+            label: '大模型',
+            position: 'right',
+            docsPluginId: 'AI',
           },
           {
             type: 'doc',
@@ -289,19 +297,28 @@ module.exports = {
           },
           {
             type: 'doc',
-            docId: 'overview',
-            label: 'smartcity',
+            docId: 'architecture-glossary',
+            label: '架构设计',
             position: 'right',
-            docsPluginId: 'community',
+            docsPluginId: 'architecture',
           },
           {
-            to: '/showcase',
-            label: 'Showcase',
+            type: 'doc',
+            docId: 'overview',
+            label: '智慧城市',
             position: 'right',
+            docsPluginId: 'contributing',
+          },
+          {
+            type: 'doc',
+            docId: 'Spring Boot启动源码分析',
+            label: '前言动态',
+            position: 'right',
+            docsPluginId: 'news',
           },
           {
             to: '/blog',
-            label: '技术方案',
+            label: '博客',
             position: 'right',
           },
           {
@@ -316,7 +333,7 @@ module.exports = {
             ],
           },
           {
-            href: 'https://github.com/facebook/react-native',
+            href: 'https://www.heguang-tech.cn',
             'aria-label': 'GitHub repository',
             position: 'right',
             className: 'navbar-github-link',

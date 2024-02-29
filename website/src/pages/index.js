@@ -583,15 +583,8 @@ const Index = () => {
           content="React Native · Learn once, write anywhere"
         />
       </Head>
-      <HeaderHero />
-      <NativeApps />
-      <NativeCode />
+
       <NativeDevelopment />
-      <CrossPlatform />
-      <FastRefresh />
-      <VideoContent />
-      <Community />
-      <GetStarted />
     </Layout>
   );
 };

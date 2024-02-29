@@ -1,11 +1,11 @@
 {
-  "community": [
+  "AI": [
     {
       "type": "category",
-      "label": "Community",
+      "label": "AI",
       "collapsed": false,
       "collapsible": false,
-      "items": ["overview"]
+      "items": ["LangChain：打造自己的LLM应用"]
     }
   ]
 }

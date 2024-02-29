@@ -1,11 +1,11 @@
 {
-  "community": [
+  "news": [
     {
       "type": "category",
-      "label": "Community",
+      "label": "news",
       "collapsed": false,
       "collapsible": false,
-      "items": ["overview"]
+      "items": ["Spring Boot启动源码分析"]
     }
   ]
 }
