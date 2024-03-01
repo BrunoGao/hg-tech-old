@@ -55,7 +55,7 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'en', // 或者 'zh'，如果你想让中文成为默认语言
     locales: ['en'],
   },
   onBrokenLinks: 'throw',
@@ -276,10 +276,10 @@ module.exports = {
         items: [
           {
             type: 'doc',
-            docId: 'overview',
-            label: '安全监测',
+            docId: 'Spring Boot启动源码分析',
+            label: '前沿动态',
             position: 'right',
-            docsPluginId: 'community',
+            docsPluginId: 'news',
           },
           {
             type: 'doc',
@@ -311,10 +311,10 @@ module.exports = {
           },
           {
             type: 'doc',
-            docId: 'Spring Boot启动源码分析',
-            label: '前言动态',
+            docId: 'overview',
+            label: '安全',
             position: 'right',
-            docsPluginId: 'news',
+            docsPluginId: 'community',
           },
           {
             to: '/blog',
@@ -345,48 +345,20 @@ module.exports = {
         style: 'dark',
         links: [
           {
-            title: 'Develop',
+            title: '大模型',
             items: [
               {
-                label: 'Guides',
-                to: 'docs/getting-started',
-              },
-              {
-                label: 'Components',
-                to: 'docs/components-and-apis',
-              },
-              {
-                label: 'APIs',
-                to: 'docs/accessibilityinfo',
-              },
-              {
-                label: 'Architecture',
-                to: 'architecture/overview',
+                label: 'LangChain',
+                to: 'AI/LangChain：打造自己的LLM应用',
               },
             ],
           },
           {
-            title: 'Participate',
+            title: '安全',
             items: [
               {
-                label: 'Showcase',
-                to: 'showcase',
-              },
-              {
-                label: 'Contributing',
-                to: 'contributing/overview',
-              },
-              {
-                label: 'Community',
+                label: '漏洞检测',
                 to: 'community/overview',
-              },
-              {
-                label: 'Directory',
-                href: 'https://reactnative.directory/',
-              },
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/react-native',
               },
             ],
           },
@@ -399,11 +371,11 @@ module.exports = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/reactnative',
+                href: 'https://twitter.com/gaojunivas',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/react-native',
+                href: 'https://github.com/BrunoGao?tab=repositories',
               },
             ],
           },
@@ -411,16 +383,8 @@ module.exports = {
             title: 'Explore More',
             items: [
               {
-                label: 'ReactJS',
-                href: 'https://reactjs.org/',
-              },
-              {
-                label: 'Privacy Policy',
-                href: 'https://opensource.fb.com/legal/privacy/',
-              },
-              {
-                label: 'Terms of Service',
-                href: 'https://opensource.fb.com/legal/terms/',
+                label: 'hg-tech',
+                href: 'https://www.heguang-tech.cn/',
               },
             ],
           },
@@ -441,14 +405,14 @@ module.exports = {
       metadata: [
         {
           property: 'og:image',
-          content: 'https://reactnative.dev/img/logo-og.png',
+          content: 'img/hg-logo.png',
         },
         {name: 'twitter:card', content: 'summary_large_image'},
         {
           name: 'twitter:image',
-          content: 'https://reactnative.dev/img/logo-og.png',
+          content: 'img/hg-logo.png',
         },
-        {name: 'twitter:site', content: '@reactnative'},
+        {name: 'twitter:site', content: '@hg-tech'},
       ],
     }),
 };
