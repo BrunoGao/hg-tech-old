@@ -132,10 +132,10 @@ module.exports = {
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'contributing',
-        path: 'contributing',
-        routeBasePath: '/contributing',
-        sidebarPath: require.resolve('./sidebarsContributing.json'),
+        id: 'smartcity',
+        path: 'smartcity',
+        routeBasePath: '/smartcity',
+        sidebarPath: require.resolve('./sidebarsSmartcity.json'),
         ...commonDocsOptions,
       }),
     ],
@@ -143,10 +143,10 @@ module.exports = {
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'community',
-        path: 'community',
-        routeBasePath: '/community',
-        sidebarPath: require.resolve('./sidebarsCommunity.json'),
+        id: 'security',
+        path: 'security',
+        routeBasePath: '/security',
+        sidebarPath: require.resolve('./sidebarsSecurity.json'),
         ...commonDocsOptions,
       }),
     ],
@@ -307,14 +307,14 @@ module.exports = {
             docId: 'overview',
             label: '智慧城市',
             position: 'right',
-            docsPluginId: 'contributing',
+            docsPluginId: 'smartcity',
           },
           {
             type: 'doc',
             docId: 'overview',
             label: '安全',
             position: 'right',
-            docsPluginId: 'community',
+            docsPluginId: 'security',
           },
           {
             to: '/blog',

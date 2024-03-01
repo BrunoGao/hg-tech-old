@@ -1,8 +1,8 @@
 {
-  "contributing": [
+  "smartcity": [
     {
       "type": "category",
-      "label": "Community",
+      "label": "smartcity",
       "collapsed": false,
       "collapsible": false,
       "items": ["overview"]

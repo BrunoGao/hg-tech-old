@@ -1,11 +1,11 @@
 {
-  "community": [
+  "security": [
     {
       "type": "category",
-      "label": "Community",
+      "label": "security",
       "collapsed": false,
       "collapsible": false,
-      "items": ["overview"]
+      "items": ["overview", "零信任技术"]
     }
   ]
 }
