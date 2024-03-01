@@ -169,7 +169,6 @@ module.exports = {
         path: 'solution',
         routeBasePath: '/solution',
         sidebarPath: require.resolve('./sidebarsSolution.json'),
-        ...commonDocsOptions,
       }),
     ],
     [
@@ -358,7 +357,7 @@ module.exports = {
             items: [
               {
                 label: '漏洞检测',
-                to: 'community/overview',
+                to: 'security/overview',
               },
             ],
           },
