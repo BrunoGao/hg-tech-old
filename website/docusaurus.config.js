@@ -54,8 +54,8 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'zh-Hans', // 或者 'zh'，如果你想让中文成为默认语言
-    locales: ['zh-Hans'],
+    defaultLocale: 'en', // 或者 'zh'，如果你想让中文成为默认语言
+    locales: ['en'],
   },
   onBrokenLinks: 'throw',
   webpack: {
@@ -73,12 +73,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        sitemap: {
-          changefreq: 'weekly',
-          priority: 0.5,
-          ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml',
-        },
         docs: {
           path: '../docs',
           sidebarPath: require.resolve('./sidebars.json'),
@@ -115,7 +109,7 @@ module.exports = {
           trackingID: 'UA-41298772-2',
         },
         gtag: {
-          trackingID: 'G-N6D91BTCR4',
+          trackingID: 'G-58L13S6BDP',
         },
       }),
     ],
@@ -267,10 +261,6 @@ module.exports = {
           'python',
           'ini',
           'scala',
-          'sql',
-          'go',
-          'less',
-          'cpp',
         ],
       },
       navbar: {
@@ -309,7 +299,6 @@ module.exports = {
             position: 'right',
             docsPluginId: 'architecture',
           },
-
           {
             type: 'doc',
             docId: 'overview',
@@ -407,7 +396,7 @@ module.exports = {
       algolia: {
         appId: 'VQ6W6FSK2C',
         apiKey: 'a2953f1561fd3716177ddbeb9e84405e',
-        indexName: 'hg-tech-newUI',
+        indexName: 'he-tech',
         contextualSearch: true,
       },
       metadata: [
