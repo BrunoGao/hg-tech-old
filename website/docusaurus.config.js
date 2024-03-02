@@ -54,8 +54,8 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'en', // 或者 'zh'，如果你想让中文成为默认语言
-    locales: ['en'],
+    defaultLocale: 'zh-Hans', // 或者 'zh'，如果你想让中文成为默认语言
+    locales: ['zh-Hans'],
   },
   onBrokenLinks: 'throw',
   webpack: {
@@ -73,6 +73,12 @@ module.exports = {
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
         docs: {
           path: '../docs',
           sidebarPath: require.resolve('./sidebars.json'),
@@ -109,7 +115,7 @@ module.exports = {
           trackingID: 'UA-41298772-2',
         },
         gtag: {
-          trackingID: 'G-58L13S6BDP',
+          trackingID: 'G-N6D91BTCR4',
         },
       }),
     ],
