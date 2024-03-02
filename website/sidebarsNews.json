@@ -2,10 +2,16 @@
   "news": [
     {
       "type": "category",
-      "label": "news",
+      "label": "前沿动态",
       "collapsed": false,
       "collapsible": false,
-      "items": ["Spring Boot启动源码分析", "货拉拉 OLAP 体系演进"]
+      "items": [
+        "货拉拉 OLAP 体系演进",
+        "米哈游大数据云原生实践",
+        "美团前端研发框架Rome实践和演进趋势",
+        "字节跳动的云原生技术历程演进",
+        "美团可视化全链路日志追踪"
+      ]
     }
   ]
 }

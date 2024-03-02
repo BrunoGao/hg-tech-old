@@ -91,7 +91,7 @@ module.exports = {
         blog: {
           path: 'blog',
           blogSidebarCount: 'ALL',
-          blogSidebarTitle: 'All Blog Posts',
+          blogSidebarTitle: '全部博客',
           feedOptions: {
             type: 'all',
             copyright,
@@ -136,7 +136,6 @@ module.exports = {
         path: 'smartcity',
         routeBasePath: '/smartcity',
         sidebarPath: require.resolve('./sidebarsSmartcity.json'),
-        ...commonDocsOptions,
       }),
     ],
     [
@@ -242,9 +241,9 @@ module.exports = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       announcementBar: {
-        id: 'support_ukraine',
+        id: 'hg-tech',
         content:
-          '🇺🇦 <a target="_blank" rel="和光科技" href="https://www.heguang-tech.cn/"> 和光科技</a>',
+          ' <a target="_blank" rel="和光科技" href="https://www.heguang-tech.cn/"> 和光科技</a>',
         backgroundColor: '#20232a',
         textColor: '#fff',
         isCloseable: false,
@@ -263,6 +262,11 @@ module.exports = {
           'python',
           'ini',
           'scala',
+          'sql',
+          'go',
+          'less',
+          'cpp',
+          'shell',
         ],
       },
       navbar: {
@@ -275,7 +279,7 @@ module.exports = {
         items: [
           {
             type: 'doc',
-            docId: 'Spring Boot启动源码分析',
+            docId: '货拉拉 OLAP 体系演进',
             label: '前沿动态',
             position: 'right',
             docsPluginId: 'news',

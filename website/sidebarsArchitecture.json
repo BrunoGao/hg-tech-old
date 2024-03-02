@@ -4,7 +4,10 @@
       "type": "category",
       "label": "Architecture",
       "collapsed": false,
-      "items": ["architecture-glossary"]
+      "items": [
+        "architecture-glossary",
+        "Kubernetes源码分析1-kubectl中Pod的创建流程"
+      ]
     }
   ]
 }
