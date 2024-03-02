@@ -5,7 +5,11 @@
       "label": "security",
       "collapsed": false,
       "collapsible": false,
-      "items": ["overview", "零信任技术"]
+      "items": [
+        "overview",
+        "使用eBPF逃逸容器技术分析与实践",
+        "字节跳动安全合规检测技术Android篇"
+      ]
     }
   ]
 }

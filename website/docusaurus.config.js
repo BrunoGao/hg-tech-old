@@ -17,8 +17,7 @@ const commonDocsOptions = {
   breadcrumbs: false,
   showLastUpdateAuthor: true,
   showLastUpdateTime: true,
-  editUrl:
-    'https://gitee.com/bruno_gao_admin/react-native-website/tree/main/website',
+  editUrl: 'https://github.com/BrunoGao/hg-tech/blob/main/website',
   remarkPlugins: [require('@react-native-website/remark-snackplayer')],
 };
 
@@ -292,7 +291,7 @@ module.exports = {
           },
           {
             type: 'doc',
-            docId: 'Spring Boot启动源码分析',
+            docId: '高并发场景下常见的限流算法及方案介绍',
             label: '技术方案',
             position: 'right',
             docsPluginId: 'solution',
