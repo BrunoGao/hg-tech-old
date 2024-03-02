@@ -6,6 +6,7 @@
       "collapsed": false,
       "items": [
         "architecture-glossary",
+        "人人都是架构师-清晰架构",
         {
           "type": "category",
           "label": "Kubernetes源码分析",
