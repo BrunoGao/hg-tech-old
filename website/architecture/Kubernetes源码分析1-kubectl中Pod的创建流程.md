@@ -8,15 +8,15 @@ tags: ["云原生"]
 
 **记得看代码中的注释哈，理解都在里面**
 
-*源码基于v1.19*
+>源码基于v1.19
 
-[(一)kubectl中Pod的创建流程](/source/kubernetes/kubernetes源码分析1)
+[(一)kubectl中Pod的创建流程](/architecture/Kubernetes源码分析1-kubectl中Pod的创建流程)
 
-[(二)设计模式Visitor的实现与发送pod创建请求的细节](/source/kubernetes/kubernetes源码分析2)
+[(二)设计模式Visitor的实现与发送pod创建请求的细节](/architecture/Kubernetes源码分析2-设计模式Visitor的实现与发送pod创建请求的细节)
 
-[(三)ApiServer之三大server及权限与数据存储](/source/kubernetes/kubernetes源码分析3)
+[(三)ApiServer之三大server及权限与数据存储](/architecture/Kubernetes源码分析3-ApiServer之三大server及权限与数据存储)
 
-[(四)kube-scheduler的启动和监控资源变化](/source/kubernetes/kubernetes源码分析4)
+[(四)kube-scheduler的启动和监控资源变化](/architecture/Kubernetes源码分析4-kube-scheduler的启动和监控资源变化)
 
 ## 确立目标
 
@@ -44,7 +44,7 @@ spec:
 
 ## 部署Pod
 
-```go
+```shell
 kubectl create -f nginx_pod.yaml 
 
 pod/nginx-pod created

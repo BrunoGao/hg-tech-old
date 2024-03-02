@@ -6,7 +6,10 @@
       "collapsed": false,
       "items": [
         "architecture-glossary",
-        "Kubernetes源码分析1-kubectl中Pod的创建流程"
+        "Kubernetes源码分析1-kubectl中Pod的创建流程",
+        "Kubernetes源码分析2-设计模式Visitor的实现与发送pod创建请求的细节",
+        "Kubernetes源码分析3-ApiServer之三大server及权限与数据存储",
+        "Kubernetes源码分析4-kube-scheduler的启动和监控资源变化"
       ]
     }
   ]

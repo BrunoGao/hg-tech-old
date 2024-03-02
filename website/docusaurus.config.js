@@ -266,7 +266,6 @@ module.exports = {
           'go',
           'less',
           'cpp',
-          'shell',
         ],
       },
       navbar: {
