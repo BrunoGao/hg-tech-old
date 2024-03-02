@@ -261,6 +261,8 @@ module.exports = {
           'python',
           'ini',
           'scala',
+          'yaml',
+          'cpp',
         ],
       },
       navbar: {
