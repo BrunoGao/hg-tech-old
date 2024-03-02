@@ -131,10 +131,10 @@ module.exports = {
       'content-docs',
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
-        id: 'smartcity',
-        path: 'smartcity',
-        routeBasePath: '/smartcity',
-        sidebarPath: require.resolve('./sidebarsSmartcity.json'),
+        id: 'about',
+        path: 'about',
+        routeBasePath: '/about',
+        sidebarPath: require.resolve('./sidebarsAbout.json'),
       }),
     ],
     [
@@ -303,13 +303,7 @@ module.exports = {
             position: 'right',
             docsPluginId: 'architecture',
           },
-          {
-            type: 'doc',
-            docId: 'overview',
-            label: '智慧城市',
-            position: 'right',
-            docsPluginId: 'smartcity',
-          },
+
           {
             type: 'doc',
             docId: 'overview',
@@ -321,6 +315,13 @@ module.exports = {
             to: '/blog',
             label: '博客',
             position: 'right',
+          },
+          {
+            type: 'doc',
+            docId: 'overview',
+            label: '关于和光',
+            position: 'right',
+            docsPluginId: 'about',
           },
           {
             type: 'docsVersionDropdown',
@@ -400,7 +401,7 @@ module.exports = {
       algolia: {
         appId: 'VQ6W6FSK2C',
         apiKey: 'a2953f1561fd3716177ddbeb9e84405e',
-        indexName: 'he-tech',
+        indexName: 'hg-tech-newUI',
         contextualSearch: true,
       },
       metadata: [

@@ -1,0 +1,16 @@
+{
+  "smartcity": [
+    {
+      "type": "category",
+      "label": "关于和光",
+      "collapsed": false,
+      "collapsible": false,
+      "items": [
+        "overview",
+        "基于零信任的API网关",
+        "云迁移方案",
+        "千店规模的ERP+POS管理系统"
+      ]
+    }
+  ]
+}
