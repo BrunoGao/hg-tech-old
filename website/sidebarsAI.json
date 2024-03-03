@@ -5,7 +5,11 @@
       "label": "AI",
       "collapsed": false,
       "collapsible": false,
-      "items": ["LangChain：打造自己的LLM应用", "实现Stable diffusion自由"]
+      "items": [
+        "LangChain：打造自己的LLM应用",
+        "实现Stable diffusion自由",
+        "大语言模型技术原理"
+      ]
     }
   ]
 }

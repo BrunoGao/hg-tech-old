@@ -5,7 +5,7 @@
       "label": "Solution",
       "collapsed": false,
       "collapsible": false,
-      "items": ["高并发场景下常见的限流算法及方案介绍"]
+      "items": ["高并发场景下常见的限流算法及方案介绍", "前端性能优化方案汇总"]
     }
   ]
 }

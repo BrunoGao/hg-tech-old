@@ -1,10 +1,10 @@
 ---
 title: 'LangChain：打造自己的LLM应用'
-authors: [不才陈某]
-tags: [announcement, release, debugging]
+authors: [京东云技术团队]
+tags: [LangChain]
 date: 2024-02-29
 ---
-# 1、LangChain是什么
+## 1、LangChain是什么
 
 LangChain是一个框架，用于开发由LLM驱动的应用程序。可以简单认为是LLM领域的Spring，以及开源版的ChatGPT插件系统。核心的2个功能为：
 
@@ -14,13 +14,13 @@ LangChain是一个框架，用于开发由LLM驱动的应用程序。可以简�
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/e03cee558e734af39939ef2ac8a87221~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456121.awebp)
 
-# 2、LangChain核心组件
+## 2、LangChain核心组件
 
 LangChain提供了各种不同的组件帮助使用LLM，如下图所示，核心组件有Models、Indexes、Chains、Memory以及Agent。
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/e53d816850f548038f24621fd7d78131~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456160.awebp)
 
-## 2.1 Models
+### 2.1 Models
 
 LangChain本身不提供LLM，提供通用的接口访问LLM，可以很方便的更换底层的LLM以及自定义自己的LLM。主要有2大类的Models：
 
@@ -42,7 +42,7 @@ prompt = PromptTemplate(template=prompt_template, input_variables=["text"])
 print(prompt.format_prompt(text="我爱北京天安门"))
 ```
 
-## 2.2 Indexes
+### 2.2 Indexes
 
 索引和外部数据进行集成，用于从外部数据获取答案。如下图所示，主要的步骤有
 
@@ -56,7 +56,7 @@ print(prompt.format_prompt(text="我爱北京天安门"))
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/e1611bdaf6764474be22d1f7be49b52c~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456198.awebp)
 
-### 2.2.1 Document Loaders
+#### 2.2.1 Document Loaders
 
 LangChain通过Loader加载外部的文档，转化为标准的Document类型。Document类型主要包含两个属性：page_content 包含该文档的内容。meta_data 为文档相关的描述性数据，类似文档所在的路径等。
 
@@ -64,7 +64,7 @@ LangChain通过Loader加载外部的文档，转化为标准的Document类型。
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/3d9d9166b8824daa9fd706edcf938d2c~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456255.awebp)
 
-### 2.2.2 Text Splitters
+#### 2.2.2 Text Splitters
 
 LLM一般都会限制上下文窗口的大小，有4k、16k、32k等。针对大文本就需要进行文本分割，常用的文本分割器为RecursiveCharacterTextSplitter，可以通过separators指定分隔符。其先通过第一个分隔符进行分割，不满足大小的情况下迭代分割。
 
@@ -89,7 +89,7 @@ docs = text_splitter.create_documents(["文本在这里"])
 print(docs)
 ```
 
-### 2.2.3 Vectorstore
+#### 2.2.3 Vectorstore
 
 通过Text Embedding models，将文本转为向量，可以进行语义搜索，在向量空间中找到最相似的文本片段。目前支持常用的向量存储有Faiss、Chroma等。
 
@@ -108,7 +108,7 @@ embeddings = embeddings_model.embed_documents(
 )
 ```
 
-### 2.2.4 Retriever
+#### 2.2.4 Retriever
 
 Retriever接口用于根据非结构化的查询获取文档，一般情况下是文档存储在向量数据库中。可以调用 get_relevant_documents 方法来检索与查询相关的文档。
 
@@ -137,11 +137,11 @@ print(result)
 print(len(result))
 ```
 
-## 2.3 Chains
+### 2.3 Chains
 
 Langchain通过chain将各个组件进行链接，以及chain之间进行链接，用于简化复杂应用程序的实现。其中主要有LLMChain、Sequential Chain以及Route Chain
 
-### 2.3.1 LLMChain
+#### 2.3.1 LLMChain
 
 最基本的链为LLMChain，由PromptTemplate、LLM和OutputParser组成。LLM的输出一般为文本，OutputParser用于让LLM结构化输出并进行结果解析，方便后续的调用。
 
@@ -186,7 +186,7 @@ print(f"type={type(data)}, keyword={data['keyword']}, emotion={data['emotion']}"
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/86c0401315374975820eaa25e0a1bf59~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456330.awebp)
 
-### 2.3.2 Sequential Chain
+#### 2.3.2 Sequential Chain
 
 SequentialChains是按预定义顺序执行的链。SimpleSequentialChain为顺序链的最简单形式，其中每个步骤都有一个单一的输入/输出，一个步骤的输出是下一个步骤的输入。SequentialChain 为顺序链更通用的形式，允许多个输入/输出。
 
@@ -221,7 +221,7 @@ print(f'result={result}')
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/0f3d4c7319e34562bc93d835de3ccb60~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456373.awebp)
 
-### 2.3.3 Router Chain
+#### 2.3.3 Router Chain
 
 RouterChain是根据输入动态的选择下一个链，每条链处理特定类型的输入。
 
@@ -235,11 +235,11 @@ RouterChain由两个组件组成：
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/b6cf264543f04fbd9a6c6cfa72209ca3~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456432.awebp)
 
-### 2.3.4 Documents Chain
+#### 2.3.4 Documents Chain
 
 下面的4种Chain主要用于Document的处理，在基于文档生成摘要、基于文档的问答等场景中经常会用到，在后续的落地实践里也会有所体现。
 
-#### 2.3.4.1 Stuff
+##### 2.3.4.1 Stuff
 
 StuffDocumentsChain这种链最简单直接，是将所有获取到的文档作为context放入到Prompt中，传递到LLM获取答案。
 
@@ -247,7 +247,7 @@ StuffDocumentsChain这种链最简单直接，是将所有获取到的文档作�
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/6fc81fbe79e845f483170bea049bdc91~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456471.awebp)
 
-#### 2.3.4.2 Refine
+##### 2.3.4.2 Refine
 
 RefineDocumentsChain是通过迭代更新的方式获取答案。先处理第一个文档，作为context传递给llm，获取中间结果intermediate answer。然后将第一个文档的中间结果以及第二个文档发给llm进行处理，后续的文档类似处理。
 
@@ -255,7 +255,7 @@ Refine这种方式能部分保留上下文，以及token的使用能控制在一
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/6576772150aa4abab9277979132505a3~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456510.awebp)
 
-#### 2.3.4.3 MapReduce
+##### 2.3.4.3 MapReduce
 
 MapReduceDocumentsChain先通过LLM对每个document进行处理，然后将所有文档的答案在通过LLM进行合并处理，得到最终的结果。
 
@@ -263,7 +263,7 @@ MapReduce的方式将每个document单独处理，可以并发进行调用。但
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/bc119fe26b3247ceb0ee6669754209ad~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456551.awebp)
 
-#### 2.3.4.4 MapRerank
+##### 2.3.4.4 MapRerank
 
 MapRerankDocumentsChain和MapReduceDocumentsChain类似，先通过LLM对每个document进行处理，每个答案都会返回一个score，最后选择score最高的答案。
 
@@ -271,7 +271,7 @@ MapRerank和MapReduce类似，会大批量的调用LLM，每个document之间是
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/f21131dfaf374bb4b0da34fc9f21b969~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456601.awebp)
 
-## 2.4 Memory
+### 2.4 Memory
 
 正常情况下Chain无状态的，每次交互都是独立的，无法知道之前历史交互的信息。LangChain使用Memory组件保存和管理历史消息，这样可以跨多轮进行对话，在当前会话中保留历史会话的上下文。Memory组件支持多种存储介质，可以与Monogo、Redis、SQLite等进行集成，以及简单直接形式就是Buffer Memory。常用的Buffer Memory有
 
@@ -302,11 +302,11 @@ print(conversation.predict(input="我的姓名是什么"))
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/492a024e0e1d49b09242b17c914865fe~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456636.awebp)
 
-## 2.5 Agent
+### 2.5 Agent
 
 Agent字面含义就是代理，如果说LLM是大脑，Agent就是代理大脑使用工具Tools。目前的大模型一般都存在知识过时、逻辑计算能力低等问题，通过Agent访问工具，可以去解决这些问题。目前这个领域特别活跃，诞生了类似AutoGPT、BabyAGI、AgentGPT等一堆优秀的项目。传统使用LLM，需要给定Prompt一步一步的达成目标，通过Agent是给定目标，其会自动规划并达到目标。
 
-### 2.5.1 Agent核心组件
+#### 2.5.1 Agent核心组件
 
 Agent：代理，负责调用LLM以及决定下一步的Action。其中LLM的prompt必须包含agent_scratchpad变量，记录执行的中间过程
 
@@ -316,7 +316,7 @@ ToolKits：工具集，为特定目的的工具集合。类似Office365、Gmail�
 
 Agent Executor：Agent执行器，负责进行实际的执行。
 
-### 2.5.2 Agent的类型
+#### 2.5.2 Agent的类型
 
 一般通过initialize_agent函数进行Agent的初始化，除了llm、tools等参数，还需要指定AgentType。
 
@@ -335,7 +335,7 @@ print(agent.agent.llm_chain.prompt.template)
 
 可以通过agent.agent.llm_chain.prompt.template方法，获取其推理决策所使用的模板。
 
-### 2.5.3 自定义Tool
+#### 2.5.3 自定义Tool
 
 有多种方式可以自定义Tool，最简单的方式是通过@tool装饰器，将一个函数转为Tool。注意函数必须得有docString，其为Tool的描述。
 
@@ -368,9 +368,9 @@ print(agent_math("今天是哪天？"))
 
 ![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/3213016eb62d4ab9992fbde8bd516d42~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0-20240229172456682.awebp)
 
-# 3、LangChain落地实践
+## 3、LangChain落地实践
 
-## 3.1 文档生成总结
+### 3.1 文档生成总结
 
 1）通过Loader加载远程文档
 
@@ -469,7 +469,7 @@ print(result["result"])
 print(len(result['source_documents']))
 ```
 
-# 4、未来发展方向
+## 4、未来发展方向
 
 随着大模型的发展，LangChain应该是目前最火的LLM开发框架，能和外部数据源交互、能集成各种常用的组件等等，大大降低了LLM应用开发的门槛。其创始人Harrison Chase也和Andrew Ng联合开发了2门短课程，帮忙大家快速掌握LangChain的使用。
 
@@ -481,7 +481,7 @@ print(len(result['source_documents']))
 
 2）打造更加强大的Agent。Agent之于大模型，个人觉得类似SQL之于DB，能大幅度提升LLM的应用场景
 
-# 5、参考资料
+## 5、参考资料
 
 1、[python.langchain.com/docs/get_st…](https://link.juejin.cn?target=https%3A%2F%2Fpython.langchain.com%2Fdocs%2Fget_started%2Fintroduction.html)
 
