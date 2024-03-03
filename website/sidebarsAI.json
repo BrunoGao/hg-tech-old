@@ -5,7 +5,7 @@
       "label": "AI",
       "collapsed": false,
       "collapsible": false,
-      "items": ["LangChain：打造自己的LLM应用"]
+      "items": ["LangChain：打造自己的LLM应用", "实现Stable diffusion自由"]
     }
   ]
 }

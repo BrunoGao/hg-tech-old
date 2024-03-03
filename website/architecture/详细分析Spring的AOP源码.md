@@ -534,3 +534,9 @@ public Object getProxy(@Nullable ClassLoader classLoader) {
 **Spring**中有用户自定义的切面以及**Spring**框架提供的切面，这些切面会在**bean**的生命周期调用到**BeanPostProcessors**的**postProcessAfterInitialization()** 方法时织入**bean**，织入的形式就是为**bean**生成**AOP**动态代理对象。
 
 为**bean**生成动态代理对象前会先获取到容器中所有能够作用于这个**bean**的通知，这些通知会被封装成**Advisor**的实现类并加入到集合中，可以称这个**Advisor**的集合为通知链，获取到通知链后，会创建一个**ProxyFactory**工厂来帮助创建动态代理对象，创建前会先通过**ProxyFactory**创建**AopProxy**，根据使用的动态代理方式的不同，创建出来的**AopProxy**可以为**JdkDynamicAopProxy**或者**ObjenesisCglibAopProxy**，并且**ProxyFactory**在创建**AopProxy**时传入了自身，所以创建出来的**AopProxy**也就持有了通知链和目标对象，最后就是通过**AopProxy**将实际的动态代理对象生成出来。
+
+:::tip 版权说明
+          作者：[半夏之沫](https://juejin.cn/user/2300650277061485)
+          
+          链接：[https://juejin.cn/post/7207757855033049144](https://juejin.cn/post/7207757855033049144)
+:::
