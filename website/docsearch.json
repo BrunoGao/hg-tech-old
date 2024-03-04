@@ -1,5 +1,5 @@
 {
-  "index_name": "hg-tech-newUI",
+  "index_name": "heguang-tech",
   "start_urls": ["https://www.heguang-tech.cn/"],
   "sitemap_urls": ["https://www.heguang-tech.cn/sitemap.xml"],
   "selectors": {

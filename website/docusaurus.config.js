@@ -413,7 +413,7 @@ module.exports = {
       },
       algolia: {
         appId: '5XCG96CAAP',
-        apiKey: '40e12935a94609159af68dcab2615575',
+        apiKey: '5ba2028ec501bee39aa7590352e02140',
         indexName: 'heguang-tech',
         contextualSearch: true,
       },
