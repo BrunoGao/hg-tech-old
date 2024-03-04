@@ -89,6 +89,7 @@ module.exports = {
         },
         blog: {
           path: 'blog',
+          blogDescription: 'Blog',
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '全部博客',
           feedOptions: {
@@ -109,7 +110,7 @@ module.exports = {
           trackingID: 'UA-41298772-2',
         },
         gtag: {
-          trackingID: 'G-58L13S6BDP',
+          trackingID: 'G-K44B50BVKQ',
         },
       }),
     ],
@@ -118,7 +119,7 @@ module.exports = {
     'docusaurus-plugin-sass',
     [
       'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'architecture',
         path: 'architecture',
@@ -129,7 +130,7 @@ module.exports = {
     ],
     [
       'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'about',
         path: 'about',
@@ -139,7 +140,7 @@ module.exports = {
     ],
     [
       'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'security',
         path: 'security',
@@ -150,7 +151,7 @@ module.exports = {
     ],
     [
       'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'AI',
         path: 'AI',
@@ -161,7 +162,7 @@ module.exports = {
     ],
     [
       'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'solution',
         path: 'solution',
@@ -171,7 +172,7 @@ module.exports = {
     ],
     [
       'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'news',
         path: 'news',
@@ -246,6 +247,12 @@ module.exports = {
         backgroundColor: '#20232a',
         textColor: '#fff',
         isCloseable: false,
+      },
+      giscus: {
+        repo: 'BrunoGao/giscus',
+        repoId: 'R_kgDOLbrHOg',
+        category: 'Announcements',
+        categoryId: 'IC_kwDOLbrHOs4CduQ6',
       },
       prism: {
         defaultLanguage: 'jsx',
@@ -430,4 +437,5 @@ module.exports = {
         {name: 'twitter:site', content: '@hg-tech'},
       ],
     }),
+  clientModules: [require.resolve('./src/clientModules/routeModules.ts')],
 };
