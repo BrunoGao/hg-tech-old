@@ -412,8 +412,8 @@ module.exports = {
         copyright,
       },
       algolia: {
-        appId: 'VQ6W6FSK2C',
-        apiKey: 'a2953f1561fd3716177ddbeb9e84405e',
+        appId: '5XCG96CAAP',
+        apiKey: 'ac58225f6f49e51d0846ae2718c37703',
         indexName: 'heguang-tech',
         contextualSearch: true,
       },
