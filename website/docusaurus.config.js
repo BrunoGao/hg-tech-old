@@ -414,7 +414,7 @@ module.exports = {
       algolia: {
         appId: 'VQ6W6FSK2C',
         apiKey: 'a2953f1561fd3716177ddbeb9e84405e',
-        indexName: 'he-tech',
+        indexName: 'heguang-tech',
         contextualSearch: true,
       },
       metadata: [
