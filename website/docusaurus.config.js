@@ -269,7 +269,7 @@ module.exports = {
         title: '和光科技',
         logo: {
           src: 'img/header_logo.svg',
-          alt: 'React Native',
+          alt: '和光科技',
         },
         style: 'dark',
         items: [
