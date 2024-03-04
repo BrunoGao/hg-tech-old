@@ -2,7 +2,7 @@
 title: 货拉拉 OLAP 体系演进
 description: 10 亿数据秒级关联，货拉拉基于 Apache Doris 的 OLAP 体系演进
 publishdate: 2022-08-04
-author:  货拉拉技术
+authors:  货拉拉技术
 tags: ["OLAP"]
 categories: ["前沿动态"]
 type: "post"

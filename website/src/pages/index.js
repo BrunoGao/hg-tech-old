@@ -67,9 +67,7 @@ const WelcomeScreen = () => (
 );
   `,
   forEveryone: `
-React Native lets you create truly native apps and doesn't compromise your users' experiences.
-It provides a core set of platform agnostic native components like <code>View</code>, <code>Text</code>, and <code>Image</code>
-that map directly to the platform’s native UI building blocks.
+  AI工具。
   `,
   crossPlatform: `
 React components wrap existing native code and interact with native APIs via
@@ -322,10 +320,7 @@ function NativeDevelopment() {
       <TwoColumns
         reverse
         columnOne={
-          <TextColumn
-            title="Native Development For Everyone"
-            text={textContent.forEveryone}
-          />
+          <TextColumn title="小巧的AI工具" text={textContent.forEveryone} />
         }
         columnTwo={
           <div className="dissection">
@@ -471,16 +466,13 @@ function Community() {
   return (
     <Section className="Community" background="light">
       <div className="content">
-        <Heading text="Facebook Supported, Community Driven" />
+        <Heading text="人工智能" />
         <TwoColumns
           columnOne={
             <>
               <p className="firstP">
                 <img src={useBaseUrl(`img/homepage/fb-logo.svg`)} alt="" />
-                <span>
-                  Facebook released React Native in 2015 and has been
-                  maintaining it ever since.
-                </span>
+                <span>OpenAI.</span>
               </p>
               <p>
                 In 2018, React Native had the{' '}
@@ -523,10 +515,7 @@ function Community() {
           }
           columnTwo={
             <>
-              <p>
-                React Native is being used in thousands of apps, but it's likely
-                you've already used it in one of these apps:
-              </p>
+              <p>人工智能大模型:</p>
               <AppList />
               <p>
                 and <a href={useBaseUrl(`showcase`)}>many more</a>.
@@ -584,6 +573,7 @@ const Index = () => {
         />
       </Head>
       <NativeDevelopment />
+      <Community />
     </Layout>
   );
 };

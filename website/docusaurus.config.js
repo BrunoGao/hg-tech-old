@@ -296,7 +296,7 @@ module.exports = {
           },
           {
             type: 'doc',
-            docId: 'architecture-glossary',
+            docId: '人人都是架构师-清晰架构',
             label: '架构设计',
             position: 'right',
             docsPluginId: 'architecture',
@@ -350,19 +350,35 @@ module.exports = {
                 label: 'LangChain',
                 to: 'AI/LangChain：打造自己的LLM应用',
               },
-            ],
-          },
-          {
-            title: '安全',
-            items: [
               {
-                label: '漏洞检测',
-                to: 'security/overview',
+                label: 'Stable diffusion',
+                to: 'AI/实现Stable diffusion自由',
+              },
+              {
+                label: '大语言模型技术原理',
+                to: 'AI/大语言模型技术原理',
               },
             ],
           },
           {
-            title: 'Find us',
+            title: '架构设计',
+            items: [
+              {
+                label: '人人都是架构师-清晰架构',
+                to: 'architecture/人人都是架构师-清晰架构',
+              },
+              {
+                label: '详细分析Spring的AOP源码',
+                to: 'architecture/详细分析Spring的AOP源码',
+              },
+              {
+                label: 'Spring Boot启动源码分析',
+                to: 'architecture/Spring Boot启动源码分析',
+              },
+            ],
+          },
+          {
+            title: '联系我们',
             items: [
               {
                 label: 'Blog',
@@ -379,7 +395,7 @@ module.exports = {
             ],
           },
           {
-            title: 'Explore More',
+            title: '获取更多',
             items: [
               {
                 label: 'hg-tech',
