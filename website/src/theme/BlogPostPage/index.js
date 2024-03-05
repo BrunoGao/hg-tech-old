@@ -9,6 +9,7 @@ import BlogPostPageMetadata from '@theme/BlogPostPage/Metadata';
 import TOC from '@theme/TOC';
 import Unlisted from '@theme/Unlisted';
 import Comment from '../../components/comment';
+import { AiSummary } from '@site/src/components/aiSummary';
 function BlogPostPageContent({sidebar, children}) {
   const {metadata, toc} = useBlogPost();
   const {nextItem, prevItem, frontMatter, unlisted} = metadata;
@@ -16,6 +17,7 @@ function BlogPostPageContent({sidebar, children}) {
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
     toc_max_heading_level: tocMaxHeadingLevel,
+    summary,
   } = frontMatter;
   return (
     <BlogLayout
@@ -30,7 +32,10 @@ function BlogPostPageContent({sidebar, children}) {
         ) : undefined
       }>
       {unlisted && <Unlisted />}
-      <BlogPostItem>{children}</BlogPostItem>
+      <BlogPostItem>
+        {summary && <AiSummary content={summary} />}
+        {children}
+        </BlogPostItem>
 
       {(nextItem || prevItem) && (
         <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />

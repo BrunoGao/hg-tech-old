@@ -15,6 +15,7 @@ import type {Props} from '@theme/DocItem/Layout';
 
 import styles from './styles.module.css';
 import Comment from '../../../components/comment';
+import { AiSummary } from '@site/src/components/aiSummary';
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
@@ -43,7 +44,7 @@ function useDocTOC() {
 export default function DocItemLayout({children}: Props): JSX.Element {
   const docTOC = useDocTOC();
   const { frontMatter } = useDoc();
-  const { hide_comment: hideComment } = frontMatter;
+  const { hide_comment: hideComment ,summary} = frontMatter;
 
   const {
     metadata: {unlisted},
@@ -58,7 +59,12 @@ export default function DocItemLayout({children}: Props): JSX.Element {
             <DocBreadcrumbs />
             <DocVersionBadge />
             {docTOC.mobile}
-            <DocItemContent>{children}</DocItemContent>
+            <DocItemContent>
+             <>
+                {summary && <AiSummary content={summary} />}
+                {children}
+              </>
+            </DocItemContent>
             <DocItemFooter />
           </article>
           <DocItemPaginator />
