@@ -249,10 +249,10 @@ module.exports = {
         isCloseable: false,
       },
       giscus: {
-        repo: 'BrunoGao/giscus',
-        repoId: 'R_kgDOLbrHOg',
+        repo: 'BrunoGao/hg-tech',
+        repoId: 'R_kgDOLaQtIw',
         category: 'Announcements',
-        categoryId: 'IC_kwDOLbrHOs4CduQ6',
+        categoryId: 'DIC_kwDOLaQtI84Cdula',
       },
       prism: {
         defaultLanguage: 'jsx',
