@@ -12,9 +12,9 @@ $namespace: ai-summary;
   margin-bottom: 20px;
 
   &-button {
-    background-color: #242428;
+    background-color: #7edced;
     outline: none;
-    border: 1px solid #666;
+    border: 1px solid #f1e9e9;
     cursor: pointer;
     padding: 6px 10px;
     border-radius: 6px;
@@ -30,7 +30,7 @@ $namespace: ai-summary;
     }
 
     &:hover {
-      background-color: #353538;
+      background-color: #e6e6ed;
     }
   }
 
@@ -44,7 +44,6 @@ $namespace: ai-summary;
   &-content {
     padding: 10px;
     font-size: 14px;
-    background-color: rgb(36, 36, 40);
     border: 1px solid var(--ifm-surface-border-color);
     border-radius: 6px;
 

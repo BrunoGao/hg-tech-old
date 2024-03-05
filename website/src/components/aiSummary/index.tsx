@@ -40,7 +40,7 @@ export function AiSummary({ content }) {
             setShow(true);
           }}
         >
-          <FaMagic color="#66adff" />
+          <FaMagic />
           <span>AI 总结</span>
         </button>
       )}
@@ -48,7 +48,7 @@ export function AiSummary({ content }) {
       {show && (
         <div className={`${cls}-content`}>
           <div className={`${cls}-title`}>
-            <FaMagic style={{ marginRight: 5 }} color="#66adff" /> AI 总结
+            <FaMagic style={{ marginRight: 5 }} /> AI 总结
           </div>
 
           <span ref={el}></span>
