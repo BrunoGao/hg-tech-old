@@ -8,6 +8,7 @@ import TagsListInline from '@theme/TagsListInline';
 
 import styles from './styles.module.css';
 import DocsRating from '../../../../core/DocsRating';
+import Comment from '../../../components/comment';
 
 function TagsRow(props) {
   return (

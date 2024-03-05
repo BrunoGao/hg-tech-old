@@ -11,40 +11,28 @@ import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop';
 import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import Unlisted from '@theme/Unlisted';
-import type {Props} from '@theme/DocItem/Layout';
-
 import styles from './styles.module.css';
-import Comment from '../../../components/comment';
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
 function useDocTOC() {
   const {frontMatter, toc} = useDoc();
-  
   const windowSize = useWindowSize();
-
   const hidden = frontMatter.hide_table_of_contents;
   const canRender = !hidden && toc.length > 0;
-
   const mobile = canRender ? <DocItemTOCMobile /> : undefined;
-
   const desktop =
     canRender && (windowSize === 'desktop' || windowSize === 'ssr') ? (
       <DocItemTOCDesktop />
     ) : undefined;
-
   return {
     hidden,
     mobile,
     desktop,
   };
 }
-
-export default function DocItemLayout({children}: Props): JSX.Element {
+export default function DocItemLayout({children}) {
   const docTOC = useDocTOC();
-  const { frontMatter } = useDoc();
-  const { hide_comment: hideComment } = frontMatter;
-
   const {
     metadata: {unlisted},
   } = useDoc();
@@ -63,7 +51,6 @@ export default function DocItemLayout({children}: Props): JSX.Element {
           </article>
           <DocItemPaginator />
         </div>
-        {!hideComment && <Comment />}
       </div>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
     </div>
