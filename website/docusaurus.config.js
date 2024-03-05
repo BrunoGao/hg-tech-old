@@ -252,7 +252,7 @@ module.exports = {
         repo: 'BrunoGao/hg-tech',
         repoId: 'R_kgDOLaQtIw',
         category: 'Announcements',
-        categoryId: 'DIC_kwDOLaQtI84Cdula',
+        categoryId: 'IC_kwDOLbrHOs4CduQ6',
       },
       prism: {
         defaultLanguage: 'jsx',
