@@ -1,6 +1,6 @@
 ---
 title: Spring Boot自动配置源码解析
-author: [不才陈某]
+authors: [不才陈某]
 tags: ["Spring Boot"]
 date: 2020-11-23
 ---

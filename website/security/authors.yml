@@ -1,9 +1,3 @@
-刘Java:
-  name: 刘Java
-  title: 京东科技信息技术有限公司
-  url: https://juejin.cn/user/2727264149845725/posts
-  image_url: https://p6-passport.byteacctimg.com/img/user-avatar/270d79551c3d15b50292c5bf3f8ae06f~180x180.awebp
-
 京东云开发者:
   name: 京东云开发者
   title: 京东科技信息技术有限公司
@@ -66,29 +60,28 @@ NineData:
   url: https://cloud.tencent.com/developer/user/3830325
   image_url: https://github.com/cortinico.png
 
-字节跳动技术:
-  name: 字节跳动技术
+字节跳动终端技术:
+  name: 字节跳动终端技术
   title: 字节跳动
   url: https://juejin.cn/user/1838039172387262
   image_url: https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/7/16/164a1386a8b82dbd~tplv-t2oaga2asx-jj-mark:180:180:0:0:q75.avis
 
-程序员Sunday:
-  name: 程序员Sunday
+cipolleschi:
+  name: Riccardo Cipolleschi
   title: Software Engineer at Meta
-  url: https://juejin.cn/user/2963939078980712/posts
-  image_url: https://p3-passport.byteacctimg.com/img/user-avatar/17d4b6d6a4691daa97f95b92a52310df~180x180.awebp
+  url: https://twitter.com/CipolleschiR
+  image_url: https://github.com/cipolleschi.png
 
-不才陈某:
-  name: 码猿技术专栏
+fortmarek:
+  name: Marek Fořt
   title: Software Engineer at Shopify
-  url: https://juejin.cn/user/2506542244708072
-  image_url: https://p3-passport.byteacctimg.com/img/user-avatar/ead0e598e7b71a57dda6174b18e3fe4f~180x180.awebp
+  url: https://twitter.com/marekfort
+  image_url: https://github.com/fortmarek.png
 
-cdfmlr:
-  name: cdfmlr
-  title: 抱歉要你面对一个总是心不在焉的我。
-  url: https://www.zhihu.com/people/cdfmlr
-  image_url: https://pic1.zhimg.com/v2-eb571fd946d84344d96baae311430192_xll.jpg?source=32738c0c
+micleo:
+  name: Michael Leon
+  title: Software Engineer at Meta
+  image_url: https://github.com/fbmal7.png
 
 dmytrorykun:
   name: Dmytro Rykun

@@ -84,11 +84,10 @@ NineData:
   url: https://juejin.cn/user/2506542244708072
   image_url: https://p3-passport.byteacctimg.com/img/user-avatar/ead0e598e7b71a57dda6174b18e3fe4f~180x180.awebp
 
-cdfmlr:
-  name: cdfmlr
-  title: 抱歉要你面对一个总是心不在焉的我。
-  url: https://www.zhihu.com/people/cdfmlr
-  image_url: https://pic1.zhimg.com/v2-eb571fd946d84344d96baae311430192_xll.jpg?source=32738c0c
+micleo:
+  name: Michael Leon
+  title: Software Engineer at Meta
+  image_url: https://github.com/fbmal7.png
 
 dmytrorykun:
   name: Dmytro Rykun

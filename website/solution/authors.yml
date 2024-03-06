@@ -1,62 +1,76 @@
-不才陈某:
-  name: 不才陈某
+京东云开发者:
+  name: 京东云开发者
+  title: 京东科技信息技术有限公司
+  url: https://juejin.cn/user/2634854380340008/posts
+  image_url: https://p3-passport.byteacctimg.com/img/user-avatar/06d48f05b22d366e72d9e10134610cd7~180x180.awebp
+Java陈序员:
+  name: Java陈序员
+  title: Java后端程序员，分享日常学习、工作、生活，致敬每个爱学习的你
+  url: https://juejin.cn/user/3958702402176765/posts
+  image_url: https://p6-passport.byteacctimg.com/img/user-avatar/5ca2a343a8a025637e0d01ecef250a50~180x180.awebp
+人工智能曾小健:
+  name: 人工智能曾小健
   title: Developer Advocate at Meta
   url: https://twitter.com/abernathyca
   image_url: https://github.com/caabernathy.png
+韩信子:
+  name: 韩信子
+  title: 资深算法专家
+  url: https://juejin.cn/user/554605767047053/posts
+  image_url: https://p6-passport.byteacctimg.com/img/user-avatar/ddd95876f23c6e8ab56cab355f78a059~180x180.awebp
+京东零售技术:
+  name: 京东零售技术
+  title: 京东零售那些事，有品、有调又有料的研发资讯，带你深入了解程序猿的生活和工作。
+  url: https://juejin.cn/user/4233576972293643
+  image_url: https://p26-passport.byteacctimg.com/img/user-avatar/6539e70cf94c80f2d8aecc8d939f811f~180x180.awebp
 
-刘Java:
-  name: 刘Java
-  title: Engineering Manager at Meta
-  url: https://twitter.com/Eli_White
-  image_url: https://github.com/TheSavior.png
+半夏之沫:
+  name: 半夏之沫
+  title: 个人简介什么都没有
+  url: https://segmentfault.com/u/banxiazhimo
+  image_url: https://avatar-static.segmentfault.com/303/698/3036983449-6098ee5dbfb22_huge256
 
-lunaleaps:
-  name: Luna Wei
+LuckyLove:
+  name: LuckyLove
+  title:  后端云原生方向
+  url: https://juejin.cn/user/2203837048823117/posts
+  image_url: https://p6-passport.byteacctimg.com/img/user-avatar/9161a0f1217f5876f03a94939e1a9ae6~180x180.awebp
+
+Wgrape:
+  name: Wgrape
   title: Software Engineer at Meta
-  url: https://twitter.com/lunaleaps
-  image_url: https://github.com/lunaleaps.png
+  url: https://juejin.cn/user/1434188826023111/posts
+  image_url: https://p26-passport.byteacctimg.com/img/user-avatar/42ae9dc26bfb437dd1cedd594aabafd4~180x180.awebp
 
-SamuelSusla:
-  name: Samuel Susla
-  title: Software Engineer at Meta
-  url: https://twitter.com/SamuelSusla
-  image_url: https://github.com/sammy-SC.png
+only:
+  name: only
+  title: 魔搭社区开发者
+  url: https://www.zhihu.com/people/jason.zhou
+  image_url: https://pic1.zhimg.com/2cd583e26_xll.jpg?source=32738c0c
 
-yungsters:
-  name: Timothy Yung
-  title: Software Engineer at Meta
-  url: https://twitter.com/yungsters
-  image_url: https://github.com/yungsters.png
+NineData:
+  name: NineData
+  title:  数据库开发 | 玖章算术
+  url: https://juejin.cn/user/1684900320129816/posts
+  image_url: https://p3-passport.byteacctimg.com/img/user-avatar/a52b3a984a5600c6c943742905607a53~180x180.awebp
 
-huxpro:
-  name: Xuan Huang
-  title: Software Engineer at Meta
-  url: https://twitter.com/huxpro
-  image_url: https://github.com/huxpro.png
-
-kelset:
-  name: Lorenzo Sciandra
-  title: Senior Software Engineer at Microsoft
-  url: https://twitter.com/kelset
-  image_url: https://github.com/kelset.png
-
-cortinico:
-  name: Nicola Corti
-  title: Software Engineer at Meta
-  url: https://twitter.com/cortinico
+用户3830325:
+  name: 用户3830325
+  title: 暂未填写个人简介
+  url: https://cloud.tencent.com/developer/user/3830325
   image_url: https://github.com/cortinico.png
 
-shikaSD:
-  name: Andrei Shikov
-  title: Software Engineer at Meta
-  url: https://twitter.com/shikasd_
-  image_url: https://github.com/ShikaSD.png
+字节跳动技术团队:
+  name: 字节跳动技术团队
+  title: 字节跳动
+  url: https://juejin.cn/user/1838039172387262
+  image_url: https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2018/7/16/164a1386a8b82dbd~tplv-t2oaga2asx-jj-mark:180:180:0:0:q75.avis
 
-cipolleschi:
-  name: Riccardo Cipolleschi
+程序员Sunday:
+  name: 程序员Sunday
   title: Software Engineer at Meta
-  url: https://twitter.com/CipolleschiR
-  image_url: https://github.com/cipolleschi.png
+  url: https://juejin.cn/user/2963939078980712/posts
+  image_url: https://p3-passport.byteacctimg.com/img/user-avatar/17d4b6d6a4691daa97f95b92a52310df~180x180.awebp
 
 fortmarek:
   name: Marek Fořt

@@ -2,7 +2,7 @@
 title: 详细分析Spring的AOP源码
 description: 本篇文章是SpringAOP的源码学习分享，分为上下两篇。本篇是对SpringAOP中切面织入业务bean时为业务bean生成动态代理对象的这一块的源码学习。
 publishdate: 2023-03-07
-author: 半夏之沫
+authors: 半夏之沫
 tags: ["spring boot"]
 ---
 

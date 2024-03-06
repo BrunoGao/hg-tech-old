@@ -2,7 +2,7 @@
 title: Kubernetes源码分析1-kubectl中Pod的创建流程
 description: kubectl中Pod的创建流程。
 publishdate: 2022-10-11
-author: LuckyLove
+authors: LuckyLove
 tags: ["云原生"]
 ---
 

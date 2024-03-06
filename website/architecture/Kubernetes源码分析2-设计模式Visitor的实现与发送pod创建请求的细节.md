@@ -2,7 +2,7 @@
 title: Kubernetes源码分析2-设计模式Visitor的实现与发送pod创建请求的细节
 description: 设计模式Visitor的实现与发送pod创建请求的细节。
 publishdate: 2022-10-13
-author: LuckyLove
+authors: LuckyLove
 tags: ["云原生"]
 ---
 

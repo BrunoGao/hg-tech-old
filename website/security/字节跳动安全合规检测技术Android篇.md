@@ -1,5 +1,5 @@
 ---
-author: 字节跳动终端技术
+authors: 字节跳动终端技术
 title: "字节跳动安全合规检测技术Android篇"
 date: 2021-06-01
 tags: ["云安全"]

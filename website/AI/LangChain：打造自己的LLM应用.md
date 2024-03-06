@@ -1,6 +1,6 @@
 ---
 title: 'LangChain：打造自己的LLM应用'
-authors: [京东云技术团队]
+authors: [京东云开发者]
 tags: [LangChain]
 date: 2024-02-29
 ---

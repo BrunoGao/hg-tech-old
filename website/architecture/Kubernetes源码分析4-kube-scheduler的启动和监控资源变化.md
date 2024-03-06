@@ -2,7 +2,7 @@
 title: Kubernetes源码分析4-kube-scheduler的启动和监控资源变化
 description: kube-scheduler的启动和监控资源变化。
 publishdate: 2022-10-19
-author: LuckyLove
+authors: LuckyLove
 tags: ["云原生"]
 ---
 

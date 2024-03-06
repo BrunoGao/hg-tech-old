@@ -2,7 +2,7 @@
 title: Kubernetes源码分析3-ApiServer之三大server及权限与数据存储
 description: ApiServer之三大server及权限与数据存储。
 publishdate: 2022-10-15
-author: LuckyLove
+authors: LuckyLove
 tags: ["云原生"]
 ---
 

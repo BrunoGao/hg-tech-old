@@ -118,67 +118,64 @@ module.exports = {
   plugins: [
     'docusaurus-plugin-sass',
     [
-      'content-docs',
+      '@docusaurus/plugin-content-blog',
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'architecture',
         path: 'architecture',
         routeBasePath: '/architecture',
-        sidebarPath: require.resolve('./sidebarsArchitecture.json'),
-        ...commonDocsOptions,
       }),
     ],
     [
-      'content-docs',
+      '@docusaurus/plugin-content-blog',
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'about',
         path: 'about',
         routeBasePath: '/about',
-        sidebarPath: require.resolve('./sidebarsAbout.json'),
+        
+     
       }),
     ],
     [
-      'content-docs',
+      '@docusaurus/plugin-content-blog',
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'security',
         path: 'security',
         routeBasePath: '/security',
-        sidebarPath: require.resolve('./sidebarsSecurity.json'),
-        ...commonDocsOptions,
       }),
     ],
     [
-      'content-docs',
+      '@docusaurus/plugin-content-blog',
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'AI',
         path: 'AI',
         routeBasePath: '/AI',
-        sidebarPath: require.resolve('./sidebarsAI.json'),
-        ...commonDocsOptions,
+ 
+    
       }),
     ],
     [
-      'content-docs',
+      '@docusaurus/plugin-content-blog',
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'solution',
         path: 'solution',
         routeBasePath: '/solution',
-        sidebarPath: require.resolve('./sidebarsSolution.json'),
+   
       }),
     ],
     [
-      'content-docs',
+      '@docusaurus/plugin-content-blog',
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
         id: 'news',
         path: 'news',
         routeBasePath: '/news',
-        sidebarPath: require.resolve('./sidebarsNews.json'),
-        ...commonDocsOptions,
+
+
       }),
     ],
     [
@@ -281,51 +278,39 @@ module.exports = {
         style: 'dark',
         items: [
           {
-            type: 'doc',
-            docId: '货拉拉 OLAP 体系演进',
+            to: '/news',
             label: '前沿动态',
             position: 'right',
-            docsPluginId: 'news',
           },
           {
-            type: 'doc',
-            docId: 'LangChain：打造自己的LLM应用',
+            to: '/AI',
             label: '大模型',
             position: 'right',
-            docsPluginId: 'AI',
           },
           {
-            type: 'doc',
-            docId: '高并发场景下常见的限流算法及方案介绍',
+            to: '/solution',
             label: '技术方案',
             position: 'right',
-            docsPluginId: 'solution',
           },
           {
-            type: 'doc',
-            docId: '人人都是架构师-清晰架构',
+            to: '/architecture',
             label: '架构设计',
             position: 'right',
-            docsPluginId: 'architecture',
           },
           {
-            type: 'doc',
-            docId: 'overview',
+            to: '/security',
             label: '安全',
             position: 'right',
-            docsPluginId: 'security',
-          },
+          },       
           {
             to: '/blog',
             label: '博客',
             position: 'right',
           },
           {
-            type: 'doc',
-            docId: 'overview',
+            to: '/about',
             label: '关于和光',
             position: 'right',
-            docsPluginId: 'about',
           },
           {
             type: 'docsVersionDropdown',

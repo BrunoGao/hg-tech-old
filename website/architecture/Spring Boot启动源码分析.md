@@ -1,6 +1,6 @@
 ---
 title: Spring Boot启动源码分析
-author:  [刘Java]
+authors:  [刘Java]
 tags: ["Spring Boot"]
 date: 2022-06-28
 ---
