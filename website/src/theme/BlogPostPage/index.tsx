@@ -19,6 +19,7 @@ import type { Props } from "@theme/BlogPostPage";
 import type { BlogSidebar } from "@docusaurus/plugin-content-blog";
 import Comment from "../../components/comment";
 import { AiSummary } from '@site/src/components/aiSummary';
+import { AiTranslation } from '@site/src/components/aiTranslation';
 
 function BlogPostPageContent({
   sidebar,
@@ -34,6 +35,7 @@ function BlogPostPageContent({
     toc_min_heading_level: tocMinHeadingLevel,
     toc_max_heading_level: tocMaxHeadingLevel,
     hide_comment: hideComment,
+    ai_translation: aiTranslation,
     summary,
   } = frontMatter;
   return (
@@ -50,8 +52,8 @@ function BlogPostPageContent({
       }
     >
       <BlogPostItem>
+        {aiTranslation && <AiTranslation />}
         {summary && <AiSummary content={summary} />}
-
         {children}
         </BlogPostItem>
       {(nextItem || prevItem) && (

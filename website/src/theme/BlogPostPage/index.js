@@ -10,6 +10,7 @@ import TOC from '@theme/TOC';
 import Unlisted from '@theme/Unlisted';
 import Comment from '../../components/comment';
 import { AiSummary } from '@site/src/components/aiSummary';
+import { AiTranslation } from '@site/src/components/aiTranslation';
 function BlogPostPageContent({sidebar, children}) {
   const {metadata, toc} = useBlogPost();
   const {nextItem, prevItem, frontMatter, unlisted} = metadata;
@@ -17,6 +18,7 @@ function BlogPostPageContent({sidebar, children}) {
     hide_table_of_contents: hideTableOfContents,
     toc_min_heading_level: tocMinHeadingLevel,
     toc_max_heading_level: tocMaxHeadingLevel,
+    ai_translation: aiTranslation,
     summary,
   } = frontMatter;
   return (
@@ -33,9 +35,10 @@ function BlogPostPageContent({sidebar, children}) {
       }>
       {unlisted && <Unlisted />}
       <BlogPostItem>
+        {aiTranslation && <AiTranslation />}
         {summary && <AiSummary content={summary} />}
         {children}
-        </BlogPostItem>
+      </BlogPostItem>
 
       {(nextItem || prevItem) && (
         <BlogPostPaginator nextItem={nextItem} prevItem={prevItem} />

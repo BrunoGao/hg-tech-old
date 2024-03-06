@@ -7,7 +7,7 @@
 
 const users = require('./showcase.json');
 const versions = require('./versions.json');
-
+const getI18nContent = require('./src/utils/getI18nContent');
 const lastVersion = versions[0];
 const copyright = `Copyright © ${new Date().getFullYear()} hg-tech
 <a href=\"http://beian.miit.gov.cn\" target=\"_blank\" rel=\"noopener\">粤ICP备19161989号-4</a>"
@@ -54,7 +54,7 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'en', // 或者 'zh'，如果你想让中文成为默认语言
+    defaultLocale: 'en',
     locales: ['en'],
   },
   onBrokenLinks: 'throw',
@@ -343,6 +343,10 @@ module.exports = {
             'aria-label': 'GitHub repository',
             position: 'right',
             className: 'navbar-github-link',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
         ],
       },
