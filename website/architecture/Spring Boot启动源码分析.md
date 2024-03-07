@@ -3,13 +3,6 @@ title: Spring Boot启动源码分析
 authors:  [刘Java]
 tags: ["Spring Boot"]
 date: 2022-06-28
-summary: >-
-  网站加载可以通过服务端渲染 SSR 来优化。性能监控可以使用 pageSpeed、lighthouse、web-vitals 等工具。性能指标包括
-  FCP、LCP、FID、CLS 等。缓存可以减少 HTTP 请求，提高加载速度。网络优化包括减少 HTTP 请求、使用 HTTP2、HTTP 缓存
-  304、DNS 预解析、开启 gzip 等。JS 优化包括使用 web worker、requestAnimationFrame
-  实现动画、事件委托等。CSS 优化包括减少 css 重绘回流、css 放头部，js 放底部、降低 css 选择器复杂度等。静态资源优化包括使用 CDN、JS
-  懒加载、图片懒加载、webp 格式、渐进式图片优化体验、响应式图片等。SEO 优化包括 html 标签语义化、减少不必要的元素、图片要有含义清晰的 alt
-  描述、图片给定宽高、TDK、结构化数据、爬虫不爬取该链接、指定落地页、h1 和 h2 合理使用等。
 ---
 
 **本次的spring-boot-starter-parent版本为2.3.0。**

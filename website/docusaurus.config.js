@@ -54,8 +54,8 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans','en'],
   },
   onBrokenLinks: 'throw',
   webpack: {
@@ -133,8 +133,6 @@ module.exports = {
         id: 'about',
         path: 'about',
         routeBasePath: '/about',
-        
-     
       }),
     ],
     [
@@ -153,8 +151,6 @@ module.exports = {
         id: 'AI',
         path: 'AI',
         routeBasePath: '/AI',
- 
-    
       }),
     ],
     [
@@ -164,7 +160,6 @@ module.exports = {
         id: 'solution',
         path: 'solution',
         routeBasePath: '/solution',
-   
       }),
     ],
     [
@@ -174,8 +169,6 @@ module.exports = {
         id: 'news',
         path: 'news',
         routeBasePath: '/news',
-
-
       }),
     ],
     [
@@ -301,7 +294,7 @@ module.exports = {
             to: '/security',
             label: '安全',
             position: 'right',
-          },       
+          },
           {
             to: '/blog',
             label: '博客',

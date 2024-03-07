@@ -5,12 +5,7 @@ publishdate: 2023-03-07
 authors: 半夏之沫
 tags: ["spring boot"]
 summary: >-
-  网站加载可以通过服务端渲染 SSR 来优化。性能监控可以使用 pageSpeed、lighthouse、web-vitals 等工具。性能指标包括
-  FCP、LCP、FID、CLS 等。缓存可以减少 HTTP 请求，提高加载速度。网络优化包括减少 HTTP 请求、使用 HTTP2、HTTP 缓存
-  304、DNS 预解析、开启 gzip 等。JS 优化包括使用 web worker、requestAnimationFrame
-  实现动画、事件委托等。CSS 优化包括减少 css 重绘回流、css 放头部，js 放底部、降低 css 选择器复杂度等。静态资源优化包括使用 CDN、JS
-  懒加载、图片懒加载、webp 格式、渐进式图片优化体验、响应式图片等。SEO 优化包括 html 标签语义化、减少不必要的元素、图片要有含义清晰的 alt
-  描述、图片给定宽高、TDK、结构化数据、爬虫不爬取该链接、指定落地页、h1 和 h2 合理使用等。
+ 本文深入探讨了Spring AOP的动态代理对象生成机制，包括通知链的获取和AOP动态代理对象的创建过程。首先，通过遍历容器中的切面bean，将其通知封装成Advisor并缓存起来，形成通知链。然后，利用ProxyFactory工厂基于通知链为目标bean生成JDK或CGLIB动态代理对象。整个过程在bean的生命周期中的BeanPostProcessors的postProcessAfterInitialization()方法中完成，实现了切面的织入。
 ---
 
 
