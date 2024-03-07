@@ -284,9 +284,7 @@ AIGC（Artificial Intelligence Generated Content，人工智能生成内容）�
 :::tip 版权说明
 
 作者：Wgrape
+
 链接：https://juejin.cn/post/7337517508150525987
 
-来源：稀土掘金
-
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 :::

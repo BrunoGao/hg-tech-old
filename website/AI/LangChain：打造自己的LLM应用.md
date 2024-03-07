@@ -501,3 +501,11 @@ print(len(result['source_documents']))
 5、[mp.weixin.qq.com/s/3coFhAdzr…](https://link.juejin.cn?target=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2F3coFhAdzr40tozn8f9Dc-w)
 
 6、[github.com/langchain-a…](https://link.juejin.cn?target=https%3A%2F%2Fgithub.com%2Flangchain-ai%2Flangchain)
+
+:::tip 版权说明
+
+作者：京东科技开发者
+
+链接：https://xie.infoq.cn/article/c7842c5474fe08d96add573f3
+
+:::
