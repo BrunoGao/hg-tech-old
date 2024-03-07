@@ -1,48 +1,52 @@
 $namespace: ai-summary;
 
 @keyframes shaking {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(10deg); }
-  50% { transform: rotate(0eg); }
-  75% { transform: rotate(-10deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .#{$namespace} {
   margin-bottom: 20px;
 
-  &-button {
-    background-color: #7edced; // 浅色模式下的背景色
-    outline: none;
-    border: 1px solid #f1e9e9; // 浅色模式下的边框色
-    cursor: pointer;
-    padding: 6px 10px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-
-    span {
-      margin-left: 5px;
-    }
-
-    svg {
-      animation: shaking 0.7s ease-in-out infinite;
-    }
-
-    &:hover {
-      background-color: #e6e6ed; // 浅色模式下的悬停背景色
-    }
+  :root {
+    --button-bg-color: #555;
+    --button-border-color: #777;
+    --button-hover-bg-color: #666;
   }
 
   // 深色模式样式
   @media (prefers-color-scheme: dark) {
-    &-button {
-      background-color: #555; // 深色模式下的背景色
-      border: 1px solid #777; // 深色模式下的边框色
+    button-bg-color: #555;
+    button-border-color: #777;
+    button-hover-bg-color: #666;
+  }
 
-      &:hover {
-        background-color: #666; // 深色模式下的悬停背景色
-      }
+  // 浅色模式样式
+  @media (prefers-color-scheme: light) {
+    button-bg-color: #d4f5f9;
+    button-border-color: #e3edee;
+    button-hover-bg-color: rgb(235, 225, 225) 5f9;
+  }
+
+  &-button {
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--button-border-color);
+
+    &:hover {
+      background-color: var(--button-hover-bg-color);
     }
   }
 

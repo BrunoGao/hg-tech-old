@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { FaMagic } from 'react-icons/fa';
-import './index.scss';
-import Typed from 'typed.js';
-import { marked } from 'marked';
+import React, { useEffect, useState } from "react";
+import { FaMagic } from "react-icons/fa";
+import "./index.scss";
+import Typed from "typed.js";
+import { marked } from "marked";
 
-const cls = 'ai-summary';
+const cls = "ai-summary";
 
 export function AiSummary({ content }) {
   const [show, setShow] = useState(false);
@@ -21,7 +21,7 @@ export function AiSummary({ content }) {
       strings: [parsedContent],
       startDelay: 300,
       typeSpeed: 10,
-      showCursor: false
+      showCursor: false,
     });
 
     return () => {
@@ -37,18 +37,23 @@ export function AiSummary({ content }) {
           data-umami-event="ai-summary"
           className={`${cls}-button`}
           onClick={() => {
-            setShow(true);
+            setShow(!show);
           }}
         >
           <FaMagic />
-          <span>AI 总结</span>
+          <span>
+            AI 摘要 <sup>powered by gemini</sup>
+          </span>
         </button>
       )}
 
       {show && (
         <div className={`${cls}-content`}>
           <div className={`${cls}-title`}>
-            <FaMagic style={{ marginRight: 5 }} /> AI 总结
+            <FaMagic style={{ marginRight: 5 }} />
+            <span>
+              AI 摘要 <sup>powered by gemini</sup>
+            </span>
           </div>
 
           <span ref={el}></span>
