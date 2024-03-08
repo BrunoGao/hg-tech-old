@@ -8,7 +8,7 @@ summary: >-
 ---
 ## 1、LangChain是什么
 
-LangChain是一个框架，用于开发由LLM驱动的应用程序。可以简单认为是LLM领域的Spring，以及开源版的ChatGPT插件系统。核心的2个功能为：
+>LangChain是一个框架，用于开发由LLM驱动的应用程序。可以简单认为是LLM领域的Spring，以及开源版的ChatGPT插件系统。核心的2个功能为：
 
 1）可以将 LLM 模型与外部数据源进行连接。
 
