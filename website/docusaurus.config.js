@@ -54,8 +54,8 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans','en'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
   onBrokenLinks: 'throw',
   webpack: {
