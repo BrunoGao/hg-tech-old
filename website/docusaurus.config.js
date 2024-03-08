@@ -337,15 +337,15 @@ module.exports = {
             items: [
               {
                 label: 'LangChain',
-                to: 'AI/LangChain：打造自己的LLM应用',
+                to: 'AI/2023/05/30/大语言模型技术原理',
               },
               {
                 label: 'Stable diffusion',
-                to: 'AI/实现Stable diffusion自由',
+                to: 'AI/2024/02/05/实现Stable diffusion自由',
               },
               {
                 label: '大语言模型技术原理',
-                to: 'AI/大语言模型技术原理',
+                to: 'AI/2023/05/30/大语言模型技术原理',
               },
             ],
           },
@@ -354,15 +354,15 @@ module.exports = {
             items: [
               {
                 label: '人人都是架构师-清晰架构',
-                to: 'architecture/人人都是架构师-清晰架构',
+                to: 'architecture/2022/02/21/人人都是架构师-清晰架构',
               },
               {
                 label: '详细分析Spring的AOP源码',
-                to: 'architecture/详细分析Spring的AOP源码',
+                to: 'architecture/2023/03/07/详细分析Spring的AOP源码',
               },
               {
                 label: 'Spring Boot启动源码分析',
-                to: 'architecture/Spring Boot启动源码分析',
+                to: 'architecture/2022/06/28/Spring Boot启动源码分析',
               },
             ],
           },

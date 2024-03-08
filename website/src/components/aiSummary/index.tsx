@@ -42,7 +42,7 @@ export function AiSummary({ content }) {
         >
           <FaMagic />
           <span>
-            AI 摘要 <sup>powered by gemini</sup>
+            生成 AI 摘要 <sup>powered by gemini</sup>
           </span>
         </button>
       )}
@@ -52,7 +52,7 @@ export function AiSummary({ content }) {
           <div className={`${cls}-title`}>
             <FaMagic style={{ marginRight: 5 }} />
             <span>
-              AI 摘要 <sup>powered by gemini</sup>
+              生成 AI 摘要 <sup>powered by gemini</sup>
             </span>
           </div>
 

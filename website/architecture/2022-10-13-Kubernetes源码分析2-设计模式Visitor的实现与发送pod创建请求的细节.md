@@ -12,13 +12,13 @@ tags: ["云原生"]
 >源码基于v1.19
 
 
-[(一)kubectl中Pod的创建流程](/architecture/Kubernetes源码分析1-kubectl中Pod的创建流程)
+[(一)kubectl中Pod的创建流程](/architecture/2022/10/11/Kubernetes源码分析1-kubectl中Pod的创建流程)
 
-[(二)设计模式Visitor的实现与发送pod创建请求的细节](/architecture/Kubernetes源码分析2-设计模式Visitor的实现与发送pod创建请求的细节)
+[(二)设计模式Visitor的实现与发送pod创建请求的细节](/architecture/2022/10/13/Kubernetes源码分析2-设计模式Visitor的实现与发送pod创建请求的细节)
 
-[(三)ApiServer之三大server及权限与数据存储](/architecture/Kubernetes源码分析3-ApiServer之三大server及权限与数据存储)
+[(三)ApiServer之三大server及权限与数据存储](/architecture/2022/10/15/Kubernetes源码分析3-ApiServer之三大server及权限与数据存储)
 
-[(四)kube-scheduler的启动和监控资源变化](/architecture/Kubernetes源码分析4-kube-scheduler的启动和监控资源变化)
+[(四)kube-scheduler的启动和监控资源变化](/architecture/2022/10/19/Kubernetes源码分析4-kube-scheduler的启动和监控资源变化)
 
 
 ## 确立目标
