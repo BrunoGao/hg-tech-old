@@ -3,7 +3,10 @@ title: Spring Boot自动配置源码解析
 authors: [不才陈某]
 tags: ["Spring Boot"]
 date: 2020-11-23
-
+summary: >-
+  本文介绍了Spring Boot的自动配置原理，通过分析@SpringBootApplication和@EnableAutoConfiguration注解的源码，揭示了Spring Boot如何实现便捷的自动配置功能。文章详细解释了@AutoConfigurationPackage和@Import(AutoConfigurationImportSelector.class)的作用，以及自动配置类的加载过程，为读者提供了深入了解Spring Boot自动配置的视角。
+  <br>
+  This article delves into the auto-configuration principle of Spring Boot, unraveling how Spring Boot achieves convenient auto-configuration by analyzing the source code of @SpringBootApplication and @EnableAutoConfiguration annotations. It elaborates on the roles of @AutoConfigurationPackage and @Import(AutoConfigurationImportSelector.class), along with the process of loading auto-configuration classes, providing readers with an in-depth perspective on Spring Boot auto-configuration.
 ---
 
 ## 前言

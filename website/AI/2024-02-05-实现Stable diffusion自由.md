@@ -4,7 +4,8 @@ authors: [京东云开发者]
 tags: [Stable diffusion]
 date: 2024-02-05
 summary: >-
-
+  Stable Diffusion是一种AI绘画技术，通过扩散模型实现图像生成。该技术利用提示词、参数设置和模型来创作作品。通过Diffusion过程，AI模糊图像，让用户从中抽离并想象新内容。WebUI提供了操作界面，其中提示词、参数设置和模型选择是关键步骤。高清放大和局部重绘功能可优化生成图像质量。这种技术为AI绘画提供了理论基础和操作指导，展现了无限创作可能性。<br>
+  Stable Diffusion is an AI painting technique that utilizes diffusion models for image generation. This technology involves using prompts, parameter settings, and models to create artworks. Through the diffusion process, AI blurs images, allowing users to detach from them and imagine new content. The WebUI provides an interface where prompts, parameter settings, and model selection are crucial steps. High-definition upscaling and local redraw functions can optimize the quality of generated images. This technology provides a theoretical foundation and operational guidance for AI painting, showcasing infinite creative possibilities.
 ---
 
 我也不想标题党，可它们就是好萌啊！看看下面这些你认识多少？![img](https://heguang-tech-1300607181.cos.ap-shanghai.myqcloud.com/uPic/c737f189ce2141699b93e2e7530bb8fd~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp)

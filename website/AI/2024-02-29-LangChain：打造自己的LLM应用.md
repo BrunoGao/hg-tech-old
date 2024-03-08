@@ -4,7 +4,9 @@ authors: [京东云开发者]
 tags: [LangChain]
 date: 2024-02-29
 summary: >-
-
+    LangChain是一个框架，用于开发由LLM驱动的应用程序。它提供了各种组件，如Models、Indexes、Chains、Memory以及Agent，帮助用户使用LLM。LangChain的核心功能包括将LLM模型与外部数据源连接以及允许与LLM模型进行交互。通过LangChain，用户可以轻松地构建和定制自己的LLM应用程序。
+    <br>
+    LangChain is a framework designed for developing applications powered by Large Language Models (LLMs). It offers various components such as Models, Indexes, Chains, Memory, and Agent to assist users in leveraging LLMs. The core functionalities of LangChain include connecting LLM models with external data sources and enabling interaction with LLM models. With LangChain, users can easily build and customize their own LLM applications.
 ---
 ## 1、LangChain是什么
 
